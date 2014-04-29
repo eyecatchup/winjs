@@ -4,8 +4,6 @@ node_js:
 before_script:
 - npm install -g grunt-cli
 - git submodule update --init --recursive
-#- ./tasks/sauce/sauce_connect_setup.sh
-- ./tasks/sauce/wait_for_browser_provider.sh
 script:
 - grunt test --saucelabs
 env:
